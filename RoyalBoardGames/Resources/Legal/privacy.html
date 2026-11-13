@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · Board Games: Royal Game Night</title>
+<meta name="description" content="Privacy Policy for Board Games: Royal Game Night. 100% offline, zero data collection, no accounts, and all data stays strictly on your device.">
+<meta name="theme-color" content="#0A0D1A">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👑</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="_style.css">
+<style>
+:root {
+  --night: #0A0D1A;
+  --night-mid: #121833;
+  --night-high: #1B2347;
+  --panel: #161D3A;
+  --panel-high: #212A52;
+  --panel-card: rgba(22, 29, 58, 0.92);
+  --gold: #FFD66B;
+  --gold-light: #FFE9A8;
+  --gold-mid: #F2A93B;
+  --gold-dark: #B8741A;
+  --ivory: #FFF6E3;
+  --smoke: #9AA3C7;
+  --smoke-dim: #636B90;
+  --felt: #0E5E46;
+  --felt-dark: #0A3F31;
+  --felt-light: #1C9A78;
+  --emerald: #2FD18A;
+  --stroke: rgba(255, 214, 107, 0.22);
+  --stroke-strong: rgba(255, 214, 107, 0.45);
+  --font-display: 'Lilita One', 'Lilita', cursive, sans-serif;
+  --font-body: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--night);
+  color: var(--ivory);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.65;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at 10% 0%, rgba(28, 154, 120, 0.22) 0%, transparent 45%),
+    radial-gradient(circle at 90% 12%, rgba(60, 140, 255, 0.16) 0%, transparent 50%),
+    radial-gradient(circle at 50% 100%, rgba(242, 169, 59, 0.10) 0%, transparent 45%),
+    var(--night);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.page-wrap {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 24px 18px 64px;
+}
+
+/* Header & Tab Navigation */
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px 18px;
+  margin-bottom: 22px;
+  background: rgba(22, 29, 58, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--stroke);
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand-crown {
+  font-size: 22px;
+  line-height: 1;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+}
+
+.brand-text {
+  font-family: var(--font-display);
+  font-size: 17px;
+  letter-spacing: 1px;
+  background: linear-gradient(180deg, var(--gold-light), var(--gold) 50%, var(--gold-mid));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.brand-badge {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--smoke);
+  background: rgba(0, 0, 0, 0.35);
+  padding: 3px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 214, 107, 0.15);
+  letter-spacing: 0.5px;
+}
+
+.nav-tabs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(10, 13, 26, 0.6);
+  padding: 4px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 214, 107, 0.12);
+}
+
+.nav-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--smoke);
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.nav-tab:hover {
+  color: var(--ivory);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.nav-tab.active {
+  color: #3A200F;
+  background: linear-gradient(180deg, var(--gold-light), var(--gold) 50%, var(--gold-mid));
+  border-color: rgba(255, 233, 168, 0.6);
+  box-shadow: 0 2px 8px rgba(242, 169, 59, 0.4);
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-radius: 24px;
+  padding: 32px 28px 26px;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(28, 154, 120, 0.45), transparent 65%),
+    linear-gradient(160deg, var(--panel-high), var(--panel));
+  border: 1.5px solid var(--stroke-strong);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+}
+
+.hero::after {
+  content: '♛';
+  position: absolute;
+  right: 18px;
+  top: -12px;
+  font-size: 110px;
+  color: rgba(255, 214, 107, 0.08);
+  pointer-events: none;
+  user-select: none;
+  line-height: 1;
+}
+
+.eyebrow {
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 2.5px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 8px var(--gold);
+}
+
+h1 {
+  font-family: var(--font-display);
+  font-weight: normal;
+  font-size: 38px;
+  line-height: 1.15;
+  margin: 4px 0 10px;
+  background: linear-gradient(180deg, #FFFFFF 0%, var(--gold-light) 25%, var(--gold) 65%, var(--gold-mid) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 10px rgba(0,0,0,0.3));
+}
+
+.meta {
+  color: var(--smoke);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.chips {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  font-size: 12px;
+  font-weight: 800;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(10, 13, 26, 0.65);
+  border: 1px solid rgba(255, 214, 107, 0.28);
+  color: var(--ivory);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Callout Note */
+.note {
+  margin-top: 18px;
+  padding: 16px 20px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(14, 94, 70, 0.45), rgba(10, 63, 49, 0.3));
+  border: 1.5px solid rgba(47, 209, 138, 0.45);
+  box-shadow: 0 8px 24px rgba(14, 94, 70, 0.2);
+  font-weight: 700;
+  color: #DCFCE7;
+  font-size: 15px;
+  line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.note-icon {
+  font-size: 20px;
+  color: var(--emerald);
+  flex-shrink: 0;
+  line-height: 1.2;
+}
+
+/* Cards */
+.card {
+  margin-top: 16px;
+  padding: 20px 22px;
+  border-radius: 22px;
+  background: linear-gradient(180deg, rgba(33, 42, 82, 0.85), rgba(22, 29, 58, 0.95));
+  border: 1px solid var(--stroke);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  border-color: rgba(255, 214, 107, 0.35);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-weight: normal;
+  font-size: 22px;
+  margin: 0 0 12px;
+  color: var(--ivory);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  letter-spacing: 0.5px;
+}
+
+h2 .n {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 900;
+  font-family: var(--font-body);
+  background: linear-gradient(180deg, var(--gold-light), var(--gold) 45%, var(--gold-mid));
+  color: #3A200F;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4), inset 0 1px 1px rgba(255, 255, 255, 0.7);
+  flex-shrink: 0;
+}
+
+p {
+  margin: 0 0 12px;
+  color: #E2DC CE;
+  font-size: 15px;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 8px 0 12px;
+  padding-left: 22px;
+}
+
+li {
+  margin: 6px 0;
+  color: #E2DCCE;
+}
+
+li::marker {
+  color: var(--gold);
+}
+
+strong {
+  color: var(--ivory);
+  font-weight: 800;
+}
+
+a {
+  color: var(--gold);
+  font-weight: 800;
+  text-decoration: none;
+  border-bottom: 1.5px dashed rgba(255, 214, 107, 0.5);
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: var(--gold-light);
+  border-bottom-style: solid;
+  border-bottom-color: var(--gold-light);
+}
+
+.contact-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  padding: 8px 18px;
+  background: linear-gradient(180deg, rgba(33, 42, 82, 0.8), rgba(22, 29, 58, 0.95));
+  border: 1px solid var(--stroke-strong);
+  border-radius: 999px;
+  color: var(--gold);
+  font-weight: 800;
+  border-bottom: 1px solid var(--stroke-strong);
+}
+
+.contact-pill:hover {
+  background: linear-gradient(180deg, var(--panel-high), var(--panel));
+  border-color: var(--gold);
+}
+
+/* Footer */
+.foot {
+  margin-top: 36px;
+  padding: 24px 16px;
+  text-align: center;
+  color: var(--smoke-dim);
+  font-size: 13px;
+  font-weight: 700;
+  border-top: 1px solid rgba(255, 214, 107, 0.12);
+}
+
+.studio-credit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(255, 214, 107, 0.12);
+}
+
+.studio-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  color: var(--smoke);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.studio-logo {
+  height: 64px;
+  width: auto;
+  max-width: 200px;
+  object-fit: contain;
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.45));
+  transition: transform 0.25s ease;
+}
+
+.studio-logo:hover {
+  transform: scale(1.04);
+}
+
+.foot-crown {
+  font-size: 26px;
+  margin-bottom: 6px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+}
+
+.foot .mark {
+  font-family: var(--font-display);
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  background: linear-gradient(180deg, var(--gold-light), var(--gold) 50%, var(--gold-mid));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 4px;
+}
+
+.foot-links {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.foot-links a {
+  color: var(--smoke);
+  font-size: 12px;
+  border-bottom: none;
+}
+
+.foot-links a:hover {
+  color: var(--gold);
+}
+
+@media (max-width: 600px) {
+  .page-wrap { padding: 14px 12px 48px; }
+  .header-nav { border-radius: 20px; padding: 12px 14px; }
+  .hero { padding: 24px 20px 20px; border-radius: 20px; }
+  h1 { font-size: 30px; }
+  .card { padding: 16px 18px; border-radius: 18px; }
+  h2 { font-size: 19px; }
+  .hero::after { font-size: 80px; right: 10px; top: -6px; }
+}
+
+@media print {
+  body { background: white; color: black; }
+  .hero, .card, .note, .header-nav { box-shadow: none; border-color: #ddd; background: white; color: black; }
+  h1, h2, strong, a, .brand-text, .foot .mark { color: black !important; -webkit-text-fill-color: initial; }
+  .header-nav { display: none; }
+}
+</style>
+</head>
+<body>
+
+<div class="page-wrap">
+
+  <header class="header-nav">
+    <a href="privacy.html" class="brand">
+      <span class="brand-crown">👑</span>
+      <div>
+        <div class="brand-text">BOARD GAMES</div>
+      </div>
+      <span class="brand-badge">Royal Game Night</span>
+    </a>
+    <nav class="nav-tabs" aria-label="Legal Navigation">
+      <a href="privacy.html" class="nav-tab active">🔒 Privacy Policy</a>
+      <a href="terms.html" class="nav-tab">📜 Terms &amp; Conditions</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="eyebrow">What stays at your table</div>
+      <h1>Privacy Policy</h1>
+      <div class="meta">Effective 2 November 2026 · Board Games: Royal Game Night</div>
+      <div class="chips">
+        <span class="chip">📴 Works offline</span>
+        <span class="chip">🙅 No accounts</span>
+        <span class="chip">🔒 Zero tracking</span>
+        <span class="chip">📱 Data stays on device</span>
+        <span class="chip">🛡️ Family friendly</span>
+      </div>
+    </div>
+
+    <div class="note">
+      <span class="note-icon">♛</span>
+      <div><strong>The short version:</strong> Board Games collects nothing. Everything you do in the App stays strictly on your phone.</div>
+    </div>
+
+    <section class="card">
+      <h2><span class="n">1</span>Who we are</h2>
+      <p>This policy explains how <strong>Board Games: Royal Game Night</strong> (the "App"), developed and provided by <strong>NG Studio</strong>, handles information. It works alongside our <a href="terms.html">Terms &amp; Conditions</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="n">2</span>What we collect</h2>
+      <p><strong>Nothing is sent to us.</strong> The App has no servers, no sign-in and no online features. It does not collect, transmit, sell or share any personal information.</p>
+      <ul>
+        <li>No names, emails, phone numbers or contacts.</li>
+        <li>No location, camera, microphone or photos.</li>
+        <li>No advertising IDs, analytics or crash-reporting SDKs.</li>
+        <li>No in-app purchases or payment details.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2><span class="n">3</span>What stays on your device</h2>
+      <p>To make the games work, the App saves a few things in its private storage on your device only:</p>
+      <ul>
+        <li><strong>Profile:</strong> the player name and avatar you choose (you can use a nickname).</li>
+        <li><strong>Settings:</strong> sound, music, volume, haptics, reduced motion and computer-player skill.</li>
+        <li><strong>Saved matches:</strong> unfinished games so you can continue later.</li>
+        <li><strong>Statistics:</strong> match history, wins and trophies, including the names typed in for each seat.</li>
+      </ul>
+      <p>This information never leaves your device through the App. Other apps cannot read it.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="n">4</span>Permissions</h2>
+      <ul>
+        <li><strong>Vibration:</strong> used for haptic feedback during play. You can switch it off in Settings.</li>
+      </ul>
+      <p>The App requests no internet, location, storage, contacts, camera or microphone permissions.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="n">5</span>Device backups</h2>
+      <p>If you have turned on Android's own backup feature, your device may include the App's settings and stats in your personal backup, under your Google account and Google's privacy terms. We never receive or see that backup.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="n">6</span>Your choices &amp; deleting data</h2>
+      <ul>
+        <li>Change your name or avatar any time in <strong>Settings → Profile</strong>.</li>
+        <li>Erase history and trophies with <strong>Settings → Reset stats &amp; trophies</strong>.</li>
+        <li>Remove unfinished matches with <strong>Settings → Clear saved games</strong>.</li>
+        <li>Uninstalling the App deletes all of its data from your device.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2><span class="n">7</span>Children</h2>
+      <p>The App is suitable for a general audience, including children. Because we collect no personal information from anyone, we do not knowingly collect data from children under 13 (or the equivalent age where you live).</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="n">8</span>Links</h2>
+      <p>"Rate the app" opens your device's app store, which is run by its own provider under its own privacy policy.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="n">9</span>Changes to this policy</h2>
+      <p>If a future version adds a feature that handles data differently, we will update this policy and its effective date before that version is released.</p>
+    </section>
+
+    <section class="card">
+      <h2><span class="n">10</span>Contact</h2>
+      <p>Privacy questions? Reach out to our team anytime:</p>
+      <p><strong>NGENDEV TECHNOLABS LLP</strong> (NGD Technolab)<br>
+        1213, R K Prime, 12th, Near Nana Mava Circle, 150 Feet Ring Road,<br>
+        Rajkot, Gujarat 360005, India</p>
+      <p>Phone: <a href="tel:+919023785087">+91 90237 85087</a></p>
+      <p><a href="mailto:ngendevtech@gmail.com" class="contact-pill">✉ ngendevtech@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="studio-credit">
+      <div class="studio-label">PROVIDED BY</div>
+      <img src="ng_studio_logo.webp" alt="NG Studio" class="studio-logo">
+    </div>
+    <div class="foot-crown">👑</div>
+    <div class="mark">BOARD GAMES</div>
+    <div>Royal Game Night · Your game night stays yours.</div>
+    <div class="foot-links">
+      <a href="privacy.html">Privacy Policy</a>
+      <span>·</span>
+      <a href="terms.html">Terms &amp; Conditions</a>
+      <span>·</span>
+      <a href="mailto:ngendevtech@gmail.com">Support</a>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
